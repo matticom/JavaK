@@ -1,0 +1,9 @@
+   1. 	Ändern Sie in den Suchen-und-Ersetzen-Dialog von einem modalen Dialog in einen
+   	nicht-modalen Dialog.
+   	Trotzdem soll verhindert werden, dass dieser Dialog mehrfach über das Hauptprogramm aufgerufen
+   	werden kann (siehe Suchen-Und-Ersetzen-Dialog des Window Editors).
+
+   2. 	Sobald der Inhalt der TextArea geändert wurde, sowohl vom Benutzer als auch über den Dialog
+   	Suchen-und-Ersetzen, einen Hinweis beim Schließen des Programmes ausgeben, der zum Speichern der
+   	Änderungen auffordert.		
+   

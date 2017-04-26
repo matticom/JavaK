@@ -1,0 +1,30 @@
+1. Lesen Sie die Datei mit den Postleitzahlen vollständig (ohne Datenverlust)
+   in eine geeignete HashMap ein.
+
+2. Erstellen Sie eine Methode, mit der Sie über die Eingabe der Postleitzahl
+   alle Orte dieser Postleitzahl über die Konsole angezeigt bekommen.
+
+3. Erstellen Sie eine Methode mit der Sie über einen angegebenen Suchbegriff
+   alle Orte (mit dazugehöriger Postleitzahl) über die Konsole ausgeben, die
+   mit dem Suchbegriff übereinstimmen.
+
+   Mögliche Suchbegriffe mit Wildcards (*)
+   a)   *Suchbegriff
+        Alle Orte, die mit dem angegebenen Suchbegriff enden.
+   b)   Suchbegriff*
+        Alle Orte, die mit dem angegebenen Suchbegriff beginnen.
+   c)   *Suchbegriff*
+	Alle Orte, die den Suchbegriff irgendwo enthalten. 
+   d)   Suchbegriff
+        Der Ort muss exakt mit dem Suchbegriff übereinstimmen.
+ 
+
+	Wichtig: Groß-/Kleinschreibung ist für die Suche nicht relevant.
+ 
+
+4. Geben Sie alle Orte der HashMap/TreeMap aufsteigend sortiert aus.
+
+5. Versuchen Sie eine aufsteigend sortierte Ausgabe aller Orte mit dazugehöriger Postleitzahl
+   zu erstellen.
+
+

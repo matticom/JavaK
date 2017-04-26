@@ -1,0 +1,11 @@
+// Erstellen Sie eine Klasse 'Monat'
+
+// In der Klasse 'Monat' soll erzwungen werden,
+// dass der Wert eines Datums 'monat' immer zwischen 1 und 12 liegt.
+
+// Verwenden Sie auch (analog zur Klasse Tag) statische Variablen und Methoden zum
+// Setzen eines Default-Monats.
+
+// Stellen Sie neben den notwendigen Getter- und Setter-Methoden auch eine Methode bereit,
+// die für den aktuellen Monat auch den dazugehörigen Monatsnamen als Zeichenkette
+// zurückliefert. 

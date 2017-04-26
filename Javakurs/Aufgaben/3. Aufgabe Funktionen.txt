@@ -1,0 +1,11 @@
+// Schreiben Sie eine Funktion Maximum der zwei int-Werte übergeben werden und die
+// den größten der beiden Werte zurückliefert.
+
+// Schreiben Sie eine Funktion Maximum der drei int-Werte übergeben werden und die
+// den größten der drei Werte zurückliefert.
+// Versuchen Sie zuerst eine Lösung mit if (und else). 
+// Anschließend versuchen Sie eine Lösung nur mit Hilfe des Bedingungsoperators
+// ?:-Operators.
+
+// Versuchen Sie eine weitere Funktion Maximum mit drei int-Werten zu programmieren indem
+// Sie zu Lösung nur die erste Maximum-Funktion (mit 2 Argumenten) verwenden.

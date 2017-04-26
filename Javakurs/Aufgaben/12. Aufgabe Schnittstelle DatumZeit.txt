@@ -1,0 +1,13 @@
+Implementieren Sie in der Klasse Datum bzw. DatumZeit ebenfalls die Schnittstelle Comparable<> um 
+eine aufsteigende Sortierung nach Datum bzw. Datum und Zeit mit der Methode Arrays.sort() zu
+erreichen.
+   
+
+Hinweis: 
+Bei der Verwendung der Schnittstelle Comparable<> ist die Methode compareTo() sinnvoll zu implementieren.
+Denken Sie daran, auch die Methode equals() entsprechend dem gewählten Vergleichskriterium sinnvoll
+zu überschreiben ist.
+Eine Klasse, die equals() überschreibt, muss auch die Methode hashCode() überschreiben. 
+Das gleiche Kriterium, welches für einen Vergleich der Klasse verwendet wird, sollte für die
+Methode hashCode() verwendet werden. 
+    

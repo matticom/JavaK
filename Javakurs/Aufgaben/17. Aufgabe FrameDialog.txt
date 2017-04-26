@@ -1,0 +1,15 @@
+   Implementierung der Logik für den Suchen-und-Ersetzen-Dialog.
+   Der Button [Weitersuchen] soll auf die jeweils nächste der im Textfeld 'Suchen' angegebenen
+   Zeichenfolge positionieren und diese markieren.
+   Wenn der Text vollständig durchsucht wurde Hinweis, dass keine weiteren Vorkommen der gesuchten
+   Zeichenfolge mehr gefunden werden konnten und ob vom Beginn des Textes an weitergesucht werden soll.
+
+   Der Butten [Ersetzen] soll den gefundenen Text durch einen angegebenen Ersatztext ersetzen.
+   Dabei ist es egal, ob der Ersatztext kleiner oder größer als der Suchtext ist.
+
+   Der Button [Alle ersetzen] ersetzt automatische alle Vorkommen des gesuchten Textes durch den
+   Ersatztext.
+
+   Ob ein Suchtext gefunden werden kann oder nicht ist auch abhängig davon, ob Gross-/Klein-
+   schreibung berücksichtigt werden soll oder nicht.
+     

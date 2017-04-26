@@ -1,0 +1,14 @@
+Erzeugen sie eine Ziehung der Lottozahlen:
+6 Lottozahlen (1 - 49)  + Superzahl (0 - 9).
+
+Die Ziehung der Lottozahlen soll mit Hilfe des Zufallszahlengenerators
+(Klasse Random) erfolgen.
+
+Speichern Sie die gezogenen Zahlen in einem geeigneten Array.
+
+Achten Sie bei der Ziehung der Zahlen auf Duplikate!
+
+Nach der Ziehung geben Sie die Lottozahlen aufsteigend sortiert
+aus. 
+
+Geben Sie die Superzahl separat von den Lottozahlen über die Konsole aus.

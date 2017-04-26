@@ -1,0 +1,8 @@
+Vervollständigen Sie bitte das Programm 'CheckBoxRadioButton'
+
+1. Implementierung der Methode zum Setzen der Vordergrundfarben (Schriftfarbe).
+2. Ungünstige Farbkombinationen der Vorder- und Hintergrundfarbe vermeiden.
+   Die Beschriftungen sollten immer lesbar sein.
+3. Implementieren eines Listeners zur Bündelung der Ereignisse für das Setzen der Vordergrundfarbe.
+   Auch die Rahmenfarbe der beiden Panels sollte auf die jeweilige Vordergrundfarbe 
+   gesetzt werden.

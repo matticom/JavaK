@@ -1,0 +1,18 @@
+Fügen Sie zum Frame der Klasse 'Grafik1' zwei weitere Buttons hinzu:
+		1. Button Kopieren,
+ 		2. Button Löschen.
+
+
+Erstellen sie die erforderlichen Listener um die Ereignisse dieser beiden
+Buttons abzufangen.
+
+Beim Klicken auf den Button Kopieren soll der Inhalt des Textfeldes tf1 in das
+Textfeld tf2 kopiert werden. Danach soll der Inhalt von tf1 gelöscht und der
+Eingabefokus auf das Textfeld tf1 gesetzt werden.
+
+
+Beim Klicken auf den Button Löschen sollen die Inhalt der Textfelder tf1 und tf2 gelöscht
+werden. Anschließen soll der Eingabefokus wirder auf das Textfeld tf1 gesetzt werden.
+
+
+

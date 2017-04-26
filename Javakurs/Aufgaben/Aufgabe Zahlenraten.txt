@@ -1,0 +1,13 @@
+Aufgabe Zahlenraten:
+
+
+Erstellen Sie ein Programm welches mit Hilfe der Klasse Random (Zufallszahlengenerator) eine Zahl zwischen 1 und 100 ermittelt.
+Initialisierung des Zufallsalgorithmus: Random zufall = new Random();
+
+Lassen Sie einen Anwender raten, um welche Zahl es sich handelt.
+Dafür hat er maximal 7 Versuche.
+
+Nach jeder Eingabe geben Sie als Hilfestellung für den Anwender
+aus ob die eingegebene Zahl grösser oder kleiner als die ermittelte
+Zahl war.
+Sobald die Zahl erraten wurde ist das Spiel zu Ende.

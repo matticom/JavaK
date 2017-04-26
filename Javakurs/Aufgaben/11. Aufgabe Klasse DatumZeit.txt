@@ -1,0 +1,27 @@
+// Die Klasse 'Datum' enthält alle Methoden um Datumsberechnungen durchzuführen.
+// Was ihr jedoch fehlt ist die Zeit. Alle Datumsklassen des Systems enthalten 
+// neben dem Datum auch immer die Zeit.
+
+// Erweitern sie deshalb die Klasse Datum um die Zeit in einer Klasse 'DatumZeit'.
+// Die Zeit soll aus den privaten Integer-Variablen stunde, minute und sekunde
+// bestehen.
+// Implementieren sie notwendige Plausibiltätsprüfungen.
+// Gültige Werte für die Zeit sind 00:00:00 bis 23:59:59.
+  
+// Defininieren sie sinnvolle Konstruktoren als auch öffentliche Methoden die,
+// analog zur Klasse 'Datum' auch ein nachträgliches Ändern der Zeit ermöglichen. 
+
+// Ebenfalls analog zur Klasse 'Datum' sind folgende Methoden zu implementieren:
+// addiereStunden(int), addiereMinuten(int), addiereSekunden(int).
+
+// Eine Addition/Subtraktion von Werten auf/vom Zeitanteil soll sich natürlich auch
+// auf das Datum auswirken.
+
+// Sommer- und Winterzeit sollen hierbei allerdings nicht berücksichtigt werden
+
+// Überprüfen sie die aktuellen Werte der Klasse 'DatumZeit' indem sie Methoden zur
+// formatierten Rückgabe bereitstellen:
+// 		tt.mm.jjjj hh:mm:ss,			- 01.01.2000 15:10:22
+//		tt. Monatsname jjjj hh:mm:ss.		- 01. Januar 2000 15:10:22
+
+	 

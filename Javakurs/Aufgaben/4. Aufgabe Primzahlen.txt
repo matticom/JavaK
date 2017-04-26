@@ -1,0 +1,14 @@
+// Ermitteln Sie die Primzahlen, bis zu einem über die Konsole eingebenen Maximalwert. 
+// Geben Sie die gefundenen Primzahlen Zeilen-/Spaltenweise über die Konsole aus.
+// Am Ende der Ausgabe geben Sie auch die Anzahl der gefunden Primzahlen an.
+
+// Eine Primzahl ist eine natürliche Zahl mit genau zwei natürlichen Zahlen als Teiler, 
+// nämlich der Zahl 1 und sich selbst. 
+// Die kleinsten Primzahlen sind 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, ...
+
+
+Beispiel:
+
+	2	3	5	7	11
+       13      17      19      23	29
+			

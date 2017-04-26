@@ -1,0 +1,40 @@
+/*
+ * 1.	Schreiben sie eine Methode 'digitCount', die eine Zeichenkette
+ *	übergeben bekommt und als 'int'-Wert zurückliefert, wie viel Ziffern
+ *	darin enthalten sind.
+ *	
+ *      Beispiel: abcde123fgh4ijk...		Ergebnis: 4
+ * 
+ * 2.	Schreiben sie eine Methode 'stringReverse' die eine Zeichenkette übergeben
+ *	bekommt, und sie umdreht. 
+ *
+ *      Beispiel: 'umdrehen'			Ergebnis: 'neherdmu' 
+ *
+ * 3.   Schreiben Sie eine Methode 'lTrim' die alle führenden Leerzeichen einer Zeichenkette entfernt.
+ * 
+ *	Beispiel: '    Java ist toll'		Ergebnis: 'Java ist toll'
+ *
+ * 4.   Schreiben Sie eine Methode 'rTrim' die alle abschliessenden Leerzeichen aus einer Zeichenkette
+ *      entfernt.
+ *
+ *	Beispiel: 'Java ist toll    '		Ergebnis: 'Java ist toll'
+ *
+ * 5.   Schreiben Sie eine Methode 'trim' die alle führenden und alle abschliessenden Leerzeichen einer
+ *      Zeichenkette entfernt.
+ *
+ *	Beispiel: '    Java ist toll    '	Ergebnis: 'Java ist toll'
+ *
+ * 6.   Erweitern sie die Trim-Methoden (lTrim, rTrim, trim) soweit, dass sie nicht nur standardmässig Leerzeichen
+ *      entfernen, sondern auch jedes andere Zeichen als Parameter akzeptieren.   
+ *
+ *      Übungen mit Hilfe von String-Methoden:
+ *
+ * 7.   Schreiben sie eine Methode subStringCount, welche die Anzahl von Vorkommen einer angegebenen Zeichenfolge
+ *      zurückliefert. 
+ *   
+ *      Beispiel: "viel vor viel dahinter, noch viel viel mehr vor, aber viel viel weniger dahinter" 
+ *      Für die Suche nach der Zeichenkette 'viel' lautet das Ergebnis: 6
+ *                				
+ *
+ */
+ 
