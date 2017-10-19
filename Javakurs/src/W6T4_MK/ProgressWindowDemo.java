@@ -15,15 +15,15 @@ import javax.swing.event.ChangeListener;
 
 import Util.ProgressWindow;
 
-// Programm zum Testen des Fensters für die Fortschrittsanzeige
+// Programm zum Testen des Fensters foer die Fortschrittsanzeige
 
 public class ProgressWindowDemo extends JFrame implements ActionListener, ChangeListener
 {
-	JLabel	lblBreite, lblHöhe, lblFiller1, lblTransparenz, lblStatustext, lblFarbe, lblBenutzertext;
+	JLabel	lblBreite, lblHoehe, lblFiller1, lblTransparenz, lblStatustext, lblFarbe, lblBenutzertext;
 	JRadioButton	rbCenterOnParent, rbCenterOnDesktop;
 	JRadioButton	rbHorizontal, rbVertikal;
 	JCheckBox	 checkTitelzeile, checkProzentwert, checkAnzeigeUnbestimmt, checkAbbruch, checkModal, checkAlwaysOnTop;
-	JTextField	 tfTitelzeile, tfBreite, tfHöhe, tfStatustext, tfBenutzertext;
+	JTextField	 tfTitelzeile, tfBreite, tfHoehe, tfStatustext, tfBenutzertext;
 	JSlider	    sliderTransparenz;
 	JButton	    btnOK, btnBeenden, btnFarbe;
 
@@ -75,10 +75,10 @@ public class ProgressWindowDemo extends JFrame implements ActionListener, Change
 		tfBreite = new JTextField("400");
 		this.add(tfBreite);
 
-		lblHöhe = new JLabel("Höhe:");
-		this.add(lblHöhe);
-		tfHöhe = new JTextField("60");
-		this.add(tfHöhe);
+		lblHoehe = new JLabel("Hoehe:");
+		this.add(lblHoehe);
+		tfHoehe = new JTextField("60");
+		this.add(tfHoehe);
 
 		checkProzentwert = new JCheckBox("Prozentwert anzeigen");
 		checkProzentwert.addChangeListener(this);
@@ -87,7 +87,7 @@ public class ProgressWindowDemo extends JFrame implements ActionListener, Change
 		checkAnzeigeUnbestimmt = new JCheckBox("Anzeige unbestimmt");
 		this.add(checkAnzeigeUnbestimmt);
 
-		btnFarbe = new JButton("Farbe für Fortschrittsbalken auswählen ...");
+		btnFarbe = new JButton("Farbe foer Fortschrittsbalken auswoehlen ...");
 		btnFarbe.addActionListener(this);
 		this.add(btnFarbe);
 
@@ -115,7 +115,7 @@ public class ProgressWindowDemo extends JFrame implements ActionListener, Change
 		tfStatustext = new JTextField();
 		this.add(tfStatustext);
 
-		checkAbbruch = new JCheckBox("Abbruch ermöglichen");
+		checkAbbruch = new JCheckBox("Abbruch ermoeglichen");
 		this.add(checkAbbruch);
 
 		lblFiller1 = new JLabel();
@@ -161,7 +161,7 @@ public class ProgressWindowDemo extends JFrame implements ActionListener, Change
 
 	private void showColorDialog()
 	{
-		Color newColor = JColorChooser.showDialog(this, "Farbe für Fortschrittsanzeige auswählen", lblFarbe.getBackground());
+		Color newColor = JColorChooser.showDialog(this, "Farbe foer Fortschrittsanzeige auswoehlen", lblFarbe.getBackground());
 		if (newColor != null) lblFarbe.setBackground(newColor);
 
 		lblFarbe.setText("RGB(" + lblFarbe.getBackground().getRed() + ", " + lblFarbe.getBackground().getGreen() + "," + lblFarbe.getBackground().getBlue() + ")");
@@ -176,19 +176,19 @@ public class ProgressWindowDemo extends JFrame implements ActionListener, Change
 
 	}
 
-	// Beim AWT und bei Swing gibt es einen Thread, der für die
-	// Oberflächenelemente verantwortlich ist: den AWT-Thread.
-	// Er läuft parallel zum Hauptprogramm (ein Thread namens main) und führt den
+	// Beim AWT und bei Swing gibt es einen Thread, der foer die
+	// Oberfloechenelemente verantwortlich ist: den AWT-Thread.
+	// Er loeuft parallel zum Hauptprogramm (ein Thread namens main) und foehrt den
 	// Programmcode in den Listenern aus.
-	// Der gestartete Thread darf keine Methoden auf Swing-Komponenten aufrufen –
+	// Der gestartete Thread darf keine Methoden auf Swing-Komponenten aufrufen oe
 	// das darf nur der AWT-Thread.
-	// Andernfalls könnten zwei Programmteile parallel eine Swing-Komponente
-	// verändern, was den Zustand ruinieren kann,
-	// da Swing-Komponenten nicht gegen parallelen Zugriff geschützt sind.
-	// Die Veränderung des Fortschritts muss also aus dem eigenen Thread heraus
+	// Andernfalls koennten zwei Programmteile parallel eine Swing-Komponente
+	// veroendern, was den Zustand ruinieren kann,
+	// da Swing-Komponenten nicht gegen parallelen Zugriff geschoetzt sind.
+	// Die Veroenderung des Fortschritts muss also aus dem eigenen Thread heraus
 	// erfolgen. Dadurch wird ein Ereignis in die
-	// Ereigniswarteschlange eingefügt welches dann vom für die
-	// Oberflächenelemente verantwortlichen AWT-Thread bearbeitet wird.
+	// Ereigniswarteschlange eingefoegt welches dann vom foer die
+	// Oberfloechenelemente verantwortlichen AWT-Thread bearbeitet wird.
 
 	private class DemoProgress implements Runnable
 	{
@@ -216,7 +216,7 @@ public class ProgressWindowDemo extends JFrame implements ActionListener, Change
 
 			if (tfBreite.getText().length() > 0) progressWindow.setWidth(Integer.parseInt(tfBreite.getText()));
 
-			if (tfHöhe.getText().length() > 0) progressWindow.setHeight(Integer.parseInt(tfHöhe.getText()));
+			if (tfHoehe.getText().length() > 0) progressWindow.setHeight(Integer.parseInt(tfHoehe.getText()));
 
 			progressWindow.showPercentage(checkProzentwert.isSelected());
 			progressWindow.setIndeterminate(checkAnzeigeUnbestimmt.isSelected());
@@ -227,7 +227,7 @@ public class ProgressWindowDemo extends JFrame implements ActionListener, Change
 
 			if (!checkTitelzeile.isSelected()) progressWindow.showCancelButton(checkAbbruch.isSelected());
 
-			// In einem eigenen Thread starten, damit der Dialog modal ausgeführt werden kann.
+			// In einem eigenen Thread starten, damit der Dialog modal ausgefoehrt werden kann.
 			Thread t = new Thread(progressWindow);
 			t.start();
 
@@ -245,20 +245,20 @@ public class ProgressWindowDemo extends JFrame implements ActionListener, Change
 				for (int i = 0; i < progressWindow.getMaxValue(); i++)
 				{
 					progressWindow.setValue(i);
-					// Künstliche Verlängerung des Vorgangs
+					// Koenstliche Verloengerung des Vorgangs
 					Thread.sleep(1000);
 
 					// Die Abfrage ob abgebrochen werden soll ist in der
 					// Verarbeitungs-Routine besser, da man
-					// hier den günstigsten Zeitpunkt für einen eventuellen Abbruch
-					// wählen kann.
+					// hier den goenstigsten Zeitpunkt foer einen eventuellen Abbruch
+					// woehlen kann.
 					if (progressWindow.cancelRequest())
 					{
 						
 						if (queryCancel()) 
 							break;
 						else
-							// Zurücksetzen der Abbruchanforderung
+							// ZurÃ¼cksetzen der Abbruchanforderung
 							progressWindow.setCancelRequest(false);
 					}
 				}
